@@ -2,7 +2,7 @@
 
 ## About Me
 
-Kinda stressed out dude trying to do all the things.  Trying to a couple a big heart with a growing mind to try to be useful for once in my life.
+Kinda stressed out dude trying to do all the things.  Trying to couple a big heart with a meager/inquisitive mind to try to be useful for once in my life.
 
 ## The Premise
 
