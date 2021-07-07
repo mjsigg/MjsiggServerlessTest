@@ -1,5 +1,5 @@
 {
-  "name": "mjsiggserverlesstest",
+  "name": "mjsiggserverlesstest-1",
   "version": "1.0.0",
   "description": "![Newsletter](https://user-images.githubusercontent.com/69332964/114803220-14269100-9d6d-11eb-9a3a-e92a637e5d79.png)",
   "scripts": {
@@ -8,10 +8,14 @@
   },
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "morse-code-converter": "^1.0.2"
 =======
     "node-fetch": "^2.6.1"
 >>>>>>> refs/remotes/origin/main
+=======
+    "morse-code-converter": "^1.0.2"
+>>>>>>> 39b5f2ae3b9fe992d0fdb52312aa8da075ecd620
   },
   "devDependencies": {},
   "main": "index.js",
