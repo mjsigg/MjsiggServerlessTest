@@ -5,8 +5,8 @@ module.exports = async function (context, req) {
 
     const plaintext = (req.query.plaintext)
  
-    const code = morse.textToMorse('Hey how are you?'); // .... . -.--   .... --- .--   .- .-. .   -.-- --- ..- ..-..
-    const text = morse.morseToText(code); // HEY HOW ARE YOU?
+    const code = morse.textToMorse(plaintext); 
+    const text = morse.morseToText(code); 
     
 
     context.res = {
