@@ -8,7 +8,7 @@ function message (){
     const code = morse.textToMorse(plaintext); 
     const plaintext = req.query.plaintext;
 
-    return message('Yyyooooo')
+    return code('Yyyooooo')
 };
 
     context.res = {
