@@ -7,6 +7,13 @@ module.exports = async function (context, req) {
  
     const code = morse.textToMorse(plaintext); 
     
+function message (){
+
+    const code = morse.textToMorse(plaintext); 
+    const plaintext = req.query.plaintext;
+
+    return message('Yyyooooo')
+}
 
     context.res = {
         body: code
