@@ -4,8 +4,8 @@ module.exports = async function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
     
     const plaintext = req.query.plaintext;
-    
-    const code = morse.textToMorse('Hi'); 
+
+    const code = morse.textToMorse(plaintext); 
 
     context.res = {
         body: code
