@@ -12,7 +12,7 @@ module.exports = async function (context, req) {
     var parts = multipart.Parse(body, boundary);
     
     var convertedResult = Buffer.from(parts[0].data).toString('base64');
-    
+
     context.res = {
         body: convertedResult
     };
