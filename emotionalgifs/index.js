@@ -14,7 +14,6 @@ module.exports = async function (context, req) {
     var convertedResult = Buffer.from(parts[0].data).toString('base64');
     
     context.res = {
-        // status: 200, /* Defaults to 200 */
         body: convertedResult
     };
 }
