@@ -12,7 +12,6 @@ module.exports = async function (context, req) {
     var parts = multipart.Parse(body, boundary);
     
     var convertedResult = Buffer.from(parts[0].data).toString('base64');
-    // FILL IN THE BLANK
     
     context.res = {
         // status: 200, /* Defaults to 200 */
