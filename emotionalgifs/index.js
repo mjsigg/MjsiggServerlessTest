@@ -14,7 +14,6 @@ module.exports = async function (context, req) {
     var imageData = parts[0].data
 
     var convertedResult = Buffer.from(imageData).toString('base64');
-// FILL IN THE BLANK
 
     context.res = {
         body: convertedResult
