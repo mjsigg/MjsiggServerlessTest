@@ -8,7 +8,6 @@ module.exports = async function (context, req) {
 // TODO: assign the body variable the correct value
     var body = req.body
 
-// parse the body
     var parts = multipart.Parse(body, boundary);
 
     var imageData = parts[0].data
