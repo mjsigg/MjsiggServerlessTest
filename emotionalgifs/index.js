@@ -16,7 +16,7 @@ module.exports = async function (context, req) {
 
 
     context.res = {
-        body: { main_emotion }  
+        body: main_emotion 
     };
 }
 
