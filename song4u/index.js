@@ -30,12 +30,12 @@ module.exports = async function (context, req) {
 
     let song_classification = songs[generation]
 
-    let songs_output = `We guessed you're part of this generation: ${generation} Happy listening! ${song_classification}`
+    let response = `We guessed you're part of this generation: ${generation} Happy listening! ${song_classification}`
 
-    context.log(songs_output)
+    context.log(response)
 
     context.res = {
-        body: songs_output
+        body: response
     };   
 }
 
