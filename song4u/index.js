@@ -17,7 +17,22 @@ module.exports = async function (context, req) {
     let age = age_data[0].faceAttributes.age
 
     let generation = determine_generation(age)
-
+    
+    function determine_generation(age){
+        let generation;
+        if(age > 5 && age < 25) {
+            generation = 'GenZ';
+        } else if (age > 24 && age < 41) {
+            generation = "GenY";
+        } else if (age > 40 && age < 57) {
+            generation = "GenX";    
+        } else if (age > 56 && age < 76) {
+            generation = "BabyBoomers";
+        } else  {
+            generation = "Unknown";
+        }
+        return generation;
+    }
     context.log(generation)
 
     const songs = {
@@ -37,22 +52,6 @@ module.exports = async function (context, req) {
     context.res = {
         body: response
     };   
-}
-
-function determine_generation(age){
-    let generation;
-    if(age > 5 && age < 25) {
-        generation = 'GenZ';
-    } else if (age > 24 && age < 41) {
-        generation = "GenY";
-    } else if (age > 40 && age < 57) {
-        generation = "GenX";    
-    } else if (age > 56 && age < 76) {
-        generation = "BabyBoomers";
-    } else  {
-        generation = "Unknown";
-    }
-    return generation;
 }
 
 async function analyzeImage(img){
