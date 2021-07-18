@@ -45,7 +45,7 @@ function determine_generation(age){
 
     let song_classification = songs[generation]
 
-    let response = `We guessed you're part of this generation: ${generation} Happy listening! ${song_classification}`
+    let response = `We guessed you're part of this generation: ${generation}! Happy listening! ${song_classification}`
 
     context.log(response)
 
